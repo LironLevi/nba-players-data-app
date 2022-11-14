@@ -1,6 +1,17 @@
-/* !!!!!!!!!!!!!!!!!!!! */
-/* LAYOUT HELPERS */
-/* !!!!!!!!!!!!!!!!!!!! */
+
+#title{
+  background-color: #2d2c2c;
+  color: white;
+}
+
+
+body {
+  background-color: white;
+  color: #2d2c2c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 
 #container {
   width: 100%;
@@ -16,26 +27,60 @@
   box-sizing: border-box;
   flex-grow: 0;
   flex-basis: 100%;
-
-  /* design helper */
-  border: 1px dotted orangered;
 }
+
+h1{
+  text-align: center;
+  line-height: 1.5;
+  font-stretch: ultra-condensed;
+}
+
+h2{
+  text-align: center;
+  line-height: 1.15;
+  font-stretch: ultra-condensed;
+}
+
+p{
+  text-align: center;
+  line-height: 1.15;
+  font-size: 1.1rem; 
+}
+
+
+
+select, option{
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  background-color: #ebe9e7;
+  color: #343232;
+
+}
+
 
 .content {
   /* Usage: always nest inside .item */
+  background-color: rgb(251, 249, 249);
   flex-grow: 0;
   flex-basis: 100%;
   box-sizing: border-box;
-  margin: 5px;
-  padding: 10px;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-  /* design helper */
-  border: 1px dotted blueviolet;
+
 }
 
 .item.meta {
-  flex-basis: 50%;
+  padding: 5px;
 }
+
 
 .item.cell {
   flex-basis: 25%;
@@ -67,17 +112,4 @@
   }
 }
 
-/* !!!!!!!!!!!!!!!!!!!! */
-/* END LAYOUT HELPERS */
-/* !!!!!!!!!!!!!!!!!!!! */
 
-body {
-  background-color: #f5f5f5;
-  color: #2d2c2c;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.data-record {
-  /* visual helper */
-  border: 1px solid blueviolet;
-}

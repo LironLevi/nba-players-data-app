@@ -2,53 +2,58 @@
 
 <head>
   <meta charset=utf-8>
-  <title>My Data App</title>
+  <title>All NBA Players</title>
   <link rel="stylesheet" href="index.css" />
 </head>
+
 
 <body>
   <div id="container">
     <div id="main">
-      <h1 class="content">My Data App</h1>
 
-      <div id="app" class="row">
+      <h1 class="content" id="title">All<img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" alt="NBA Logo" title="NBA Logo" height="25" width="60">Players </h1>
+      
+        <div class="item meta">
+          <div class="row">
 
-        <!-- Start example showing the css layout -->
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-        <!-- End example showing the css layout -->
-
-        <template id="item-template">
-          <div class="item">
-            <div class="content">
-              <h2>Example Heading</h2>
-              <p>Example text.</p>
+          <div class="item meta">
+            <div>
+              <select id="data-sort">
+                <option value="sortFN">Sort by players first name</option>
+                <option value="sortLN">Sort by players last name</option>
+                <option value="sortTN">Sort by players team name</option>
+              </select>
             </div>
           </div>
-        </template>
+
+          <div class="item meta">
+            <div>
+              <select id="data-filter">
+                <option value="-">All Positions</option>
+                <option value="posC">Center</option>
+                <option value="posF">Forward</option>
+                <option value="posG">Guard</option>
+              </select>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="app" class="row">
+        <!-- element below is cleared from the DOM in the clearUI function in JavaScript -->
+
+        <div class="loading">
+          Loading data ...
+        </div>
 
       </div>
+
     </div>
+
+    <script type="module" src="index.js"></script>
   </div>
-  <script type="module" src="index.js"></script>
 </body>
 
 </html>
