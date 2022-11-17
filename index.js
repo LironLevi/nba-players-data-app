@@ -1,4 +1,4 @@
-const API_ENDPOINT = 'https://www.balldontlie.io/api/v1/players';
+const API_ENDPOINT = 'https://www.balldontlie.io/api/v1/players?&per_page=100';
 
 
 const app = document.getElementById('app');
